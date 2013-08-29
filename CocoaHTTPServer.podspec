@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.library        = 'xml2'
   s.xcconfig       = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
-  # it should point to commit 43f7e25c3a4a98ef205ab76c5d8fadb06bb5ea01 but you can't do that in Pods for now - only versions
+  # it should point to 10.6 tags in those repos in Podfile in forked repos - cocoapods doesn't support this in Podspec 
   s.dependency "CocoaAsyncSocket"
-  s.dependency "CocoaLumberjack", "~> 1.3.0"
+  s.dependency "CocoaLumberjack"
 end
